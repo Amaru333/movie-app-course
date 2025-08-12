@@ -24,12 +24,12 @@ function MovieDetails() {
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#111] to-transparent flex flex-col justify-end p-8">
           <h1 className="text-4xl font-semibold">{movie?.title}</h1>
           <p className="text-lg mt-2">{movie?.overview}</p>
-          <div className="flex items-center gap-4 mt-4">
+          <div className="flex items-center gap-4 mt-4 text-sm">
             <div className="flex items-center gap-2">
               <StarIcon className="h-4 w-4" />
-              <p className="text-lg">{movie?.vote_average.toFixed(1)}</p>
+              <p>{movie?.vote_average.toFixed(1)}</p>
             </div>
-            <p className="text-lg">{formatDate(movie?.release_date)}</p>
+            <p>{formatDate(movie?.release_date)}</p>
           </div>
         </div>
       </div>
